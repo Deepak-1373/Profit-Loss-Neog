@@ -1,7 +1,7 @@
 const initialPrice = document.querySelector("#initial-price");
 const stocksQuantity = document.querySelector("#stocks-quantity");
 const currentPrice = document.querySelector("#current-price");
-const submitBtn = document.querySelector("#submt-btn");
+const submitBtn = document.querySelector("#submit-btn");
 const outputDiv = document.querySelector("#output");
 
 function submitHandler() {
@@ -16,7 +16,7 @@ function calculateProfitAndLoss(initial, quantity, current) {
   if (initial < current) {
     let profit = (current - initial) * quantity;
     let profitPercentage = ((profit / initial) * 100).toFixed(2);
-    outputDiv.style.color = "#059669";
+    outputDiv.style.color = "#34D399";
     outputDiv.innerText =
       "The Profit is " +
       profit +
